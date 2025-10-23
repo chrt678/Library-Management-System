@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Return Book</title>
+</head>
+
+<body>
+	<h2>Return a Book</h2>
+
+	<form action="/borrow/doReturn" method="post">
+		<label>Borrow ID:</label>
+		<input type="number" name="borrowedBookId" required><br><br>
+
+		<button type="submit">Return Book</button>
+	</form>
+
+	<br>
+	<a href="/borrow/form">Borrow Another Book</a>
+	<a href="/borrow/list">View Borrowed Books</a>
+</body>
+
+</html>

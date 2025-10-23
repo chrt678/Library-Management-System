@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Update Book Details</title>
+	<style>
+		body {
+			font-family: 'Segoe UI', sans-serif;
+			background: linear-gradient(to right, #e0eafc, #cfdef3);
+			margin: 0;
+			padding: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+		}
+
+		.update-form {
+			background-color: #ffffff;
+			padding: 30px 40px;
+			border-radius: 12px;
+			box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+			width: 400px;
+		}
+
+		.update-form h2 {
+			text-align: center;
+			margin-bottom: 25px;
+			color: #333;
+		}
+
+
+
+		.submit-btn {
+			width: 100%;
+			padding: 12px;
+			background-color: #0078D7;
+			color: white;
+			border: none;
+			border-radius: 6px;
+			font-size: 16px;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+		}
+
+		.submit-btn:hover {
+			background-color: #005fa3;
+		}
+	</style>
+</head>
+
+<div class="container">
+	<form class="update-form" method="post" action="/updateBook">
+		<h2>Update Book Details</h2>
+
+
+		<label for="bookId">Book Id</label>
+		<input type="number" id="bookId" name="bookId" placeholder="Enter book Id" required /> <br> <br>
+
+
+		<label for="bookTitle">Book Title</label>
+		<input type="text" id="bookTitle" name="bookTitle" placeholder="Enter book title" required /> <br> <br>
+
+
+
+		<label for="bookAuthor">Book Author</label>
+		<input type="text" id="bookAuthor" name="bookAuthor" placeholder="Enter author name" required /> <br> <br>
+
+
+
+		<label for="bookCategory">Book Category</label>
+		<input type="text" id="bookCategory" name="bookCategory" placeholder="Enter book Category" required /> <br> <br>
+
+
+
+		<label for="bookAvailableCopies">Available Copies</label>
+		<input type="number" id="bookAvailableCopies" name="bookAvailableCopies" min="0"
+			placeholder="Enter number of copies" required /><br> <br>
+
+		<button type="submit" class="submit-btn">Update Book</button> <br/>
+		<a href="/admin">Admin Home Page</a>
+	</form>
+</div>
+</body>
+
+</html>

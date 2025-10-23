@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Online Library Management System</title>
+
+	<!-- Font Awesome CDN for icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+		integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<style>
+		body {
+			margin: 0;
+			font-family: 'Segoe UI', sans-serif;
+			background: #f4f6f8;
+		}
+
+		/* Navbar */
+		.navbar {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			background-color: #2c3e50;
+			padding: 16px 32px;
+			color: white;
+		}
+
+		.navbar h1 {
+			font-size: 24px;
+			margin: 0;
+		}
+
+		.nav-links {
+			display: flex;
+			gap: 24px;
+		}
+
+		.nav-links a {
+			color: white;
+			text-decoration: none;
+			font-size: 16px;
+			display: flex;
+			align-items: center;
+			gap: 8px;
+			transition: color 0.3s ease;
+		}
+
+		.nav-links a:hover {
+			color: #1abc9c;
+		}
+
+		/* Hero Section */
+		.hero {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+			padding: 80px 20px;
+			background: linear-gradient(to right, #74ebd5, #ACB6E5);
+			color: #333;
+		}
+
+		.hero h2 {
+			font-size: 36px;
+			margin-bottom: 16px;
+		}
+
+		.hero p {
+			font-size: 18px;
+			max-width: 600px;
+		}
+
+		/* Features Section */
+		.features {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+			gap: 32px;
+			padding: 60px 40px;
+			background-color: white;
+		}
+
+		.feature-card {
+			background-color: #ecf0f1;
+			padding: 24px;
+			border-radius: 12px;
+			text-align: center;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		}
+
+		.feature-card i {
+			font-size: 32px;
+			color: #4A90E2;
+			margin-bottom: 12px;
+		}
+
+		.feature-card h3 {
+			margin-bottom: 8px;
+			font-size: 20px;
+		}
+
+		.feature-card p {
+			font-size: 14px;
+			color: #555;
+		}
+
+		/* Footer */
+		footer {
+			background-color: #2c3e50;
+			color: white;
+			text-align: center;
+			padding: 20px;
+			font-size: 14px;
+		}
+	</style>
+</head>
+
+<body>
+
+	<!-- Navbar -->
+	<nav class="navbar">
+		<h1><i class="fas fa-book-reader"></i> MyLibrary</h1>
+		<div class="nav-links">
+			<a href="/home"><i class="fas fa-home"></i> Home</a>
+			<a href="/user"><i class="fas fa-book"></i> UserPage</a>
+			<a href="/admin"><i class="fas fa-book"></i> AdminPage</a>
+			<a href="#"><i class="fas fa-user"></i> Account</a>
+			<a href="#"><i class="fas fa-envelope"></i> Contact</a>
+			<a href="/login"><i class="fas fa-sign-in-alt"></i> Login</a>
+		</div>
+	</nav>
+
+	<!-- Hero Section -->
+	<section class="hero">
+		<h2>Welcome to MyLibrary</h2>
+		<p>Your gateway to thousands of books, journals, and digital resources. Explore, borrow, and manage your reading
+			journey with ease.</p>
+	</section>
+
+	<!-- Features Section -->
+	<section class="features">
+		<div class="feature-card">
+			<i class="fas fa-search"></i>
+			<h3>Search Books</h3>
+			<p>Find books by title, author, genre, or ISBN in seconds.</p>
+		</div>
+		<div class="feature-card">
+			<i class="fas fa-calendar-check"></i>
+			<h3>Reserve & Borrow</h3>
+			<p>Reserve books online and manage your borrowing history.</p>
+		</div>
+		<div class="feature-card">
+			<i class="fas fa-users"></i>
+			<h3>User Dashboard</h3>
+			<p>Track your activity, due dates, and recommendations.</p>
+		</div>
+		<div class="feature-card">
+			<i class="fas fa-mobile-alt"></i>
+			<h3>Mobile Access</h3>
+			<p>Access the library from any device, anytime, anywhere.</p>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer>
+		&copy; 2025 MyLibrary. All rights reserved.
+	</footer>
+
+</body>
+
+</html>
